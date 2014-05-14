@@ -1,0 +1,9 @@
+7. Formulate in Prolog the following questions: 
+ 
+ 7.1 What blocks with location x = 6? Using relation x(Block, X). 
+   
+     answer: x(Block, 6).
+
+ 7.2 What blocks with location y = 2? Using relation y(Block, Y).
+
+     answer:  y(Block, 2). 
