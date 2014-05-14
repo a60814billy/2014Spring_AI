@@ -1,0 +1,28 @@
+1.Which of the following are syntactically correct Prolog object? What kinds of object are they ?
+	(1) Hello -> is object , is variable.
+	(2) hello -> is object , is atom.
+	(3) ‘Hello’ -> is object , is atom
+	(4) ‘hello’ -> is object , is atom
+	(5) Hello_ai -> is object , is variable
+	(6) hello_AI -> is object , is atom
+	(7) 1+2 -> is object , is structure
+	(8) +(1,2) -> is object , is structure
+	(9) _hello -> is object , is variable
+	(10) ++ -> is object , is atom
+	(11) 20140229 -> is object , is number
+	(12) 2014(2,29) -> is not object
+	(13) -32768 -> is object , is number
+	(14) Black(dark) -> is not object
+	(15) black(Dark) -> is object , is structure
+
+2.Will the following matching operation succeed or fail? If they succeed, what are the resulting instantiations of variables?
+	(1) gorilla = gorilla. -> succeed 
+	(2) 'gorilla' = gorilla -> succeed
+	(3) Gorilla = gorilla -> succeed , Gorilla = gorilla
+	(4) gorilla = monkey -> fail
+	(5) gorilla(john , Gender) = gorilla(Name , male) -> succeed , Name = john , Gender = male
+	(6) gorilla(male) = gorilla(Name , Gender) -> fail
+	(7) line(point(-1 , Y) , point(X , -1)) = line(point(Y,X) , P1) -> succeed , X = Y = -1 , P1 = point(-1,-1)
+	(8) letter(C) = word(letter) -> fail
+	(9) point(X,X) = point(a,b) -> fail
+	(10) a( b(c,D) , C , f(G,h) ) = a( B , c(d,e,f,G) , H ) -> succeed , B = b(c,D) , C = c(d,e,f,G) , H = f(G,h)
